@@ -11,11 +11,16 @@
             background-color: #f0f0f0;
             text-align: center;
         }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px; /* 视频之间的间距 */
+        }
         video {
-            width: 80%;
+            width: 45%; /* 每个视频占容器宽度的45% */
             max-width: 720px;
             height: auto;
-            margin-top: 20px;
         }
         p {
             font-size: 18px;
@@ -24,11 +29,17 @@
     </style>
 </head>
 <body>
-    <h1>Here is my works.</h1>
-    <video controls>
-        <source src="video.mp4" type="video/mp4">
-        Your web is not available。
-    </video>
+    <h1>Here are my works.</h1>
+    <div class="video-container">
+        <video controls>
+            <source src="video1.mp4" type="video/mp4">
+            Your web is not available.
+        </video>
+        <video controls>
+            <source src="video2.mp4" type="video/mp4">
+            Your web is not available.
+        </video>
+    </div>
     <p>这是我上传的视频，内容展示了...</p>
 </body>
 </html>
